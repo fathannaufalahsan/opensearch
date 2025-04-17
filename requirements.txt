@@ -1,5 +1,3 @@
-hashlib
-urllib3
 plotly
 streamlit
 aiohttp
