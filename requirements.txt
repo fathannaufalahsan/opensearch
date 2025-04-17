@@ -1,0 +1,10 @@
+hashlib
+urllib3
+plotly
+streamlit
+aiohttp
+pandas
+beautifulsoup4
+configparser
+matplotlib
+lxml
