@@ -499,7 +499,7 @@ if "authenticated" not in st.session_state:
 # Layout tergantung status login
 if st.session_state.authenticated:
     st.set_page_config(
-        page_title="OpenSearch 2025",
+        page_title="OpenSearch",
         page_icon="OpenSearch.ico",
         layout="wide",
         initial_sidebar_state="expanded"
@@ -572,7 +572,7 @@ def login_ui():
                 🔐 Welcome Back!
             </h2>
             <h4>
-               🔎 OpenSearch 2025
+               OpenSearch
             </h4>
             <p style="color: #CCCCCC; font-size: 16px; font-style: italic;">
                 Please login using your credentials to access your dashboard 🚀
@@ -609,8 +609,8 @@ if not st.session_state.authenticated:
 
 # Inisialisasi state
 # 🚨 Ini harus jadi baris Streamlit pertama
-st.title("🔎 OpenSearch 2025")
-st.markdown("Temukan jurnal dari berbagai sumber terbuka dengan cepat dan mudah 🚀")
+st.title("OpenSearch")
+st.markdown("Temukan jurnal dari berbagai sumber terbuka dengan cepat dan mudah")
 
 # Inisialisasi state
 for key, default in {
@@ -630,7 +630,7 @@ with st.container():
             'ScienceDirect', 'JSTOR', 'OpenAIRE', 'OpenAlex', 'DOAB', 'IEEE Xplore'
         ])
 
-    st.markdown("##### 🎯 Opsi Tambahan")
+    st.markdown("##### Opsi Tambahan")
     with st.expander("⚙️ Filter Tahun"):
         year_filter = st.checkbox("Aktifkan Filter Tahun", value=st.session_state.year_filter)
         year = st.number_input("Tahun Publikasi", 2000, 2025, value=st.session_state.year,
@@ -768,10 +768,10 @@ if filtered_results:
 # ================== TENTANG ==================
 with st.expander("ℹ️ Tentang OpenSearch"):
     st.markdown("""
-    ### OpenSearch 2025  
+    ### OpenSearch 
     - **Dikembangkan oleh**: Fathan Naufal Ahsan 
     - **Brand**: Ahsan Karya  
-    - **Versi**: `v25.6.0`  
+    - **Versi**: `v25.5.0`  
     - **Deskripsi**: Pencarian jurnal akses terbuka dari sumber global  
     - **Kontak**: fathannaufalahsan.18@gmail.com  
     """)
